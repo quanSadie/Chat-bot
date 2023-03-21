@@ -1,6 +1,6 @@
 # Chat-bot
 Chat bot (discord) using Spring boot, discord4j and open AI api, build with microservices architecture.
-To communicate between services, I use OpenFeign, Eureka server.
+To communicate between services, I use OpenFeign.
 - !todo: show your todos list.
 - !todo_add <item> add item into your todos list.
 - !todo_done <item> remove item from your todos list.
