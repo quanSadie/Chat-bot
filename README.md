@@ -6,6 +6,7 @@ To communicate between services, I use OpenFeign, Eureka server.
 - !todo_done <item> remove item from your todos list.
 - ai!ask <message> ask a bot anything and it will response based on the context.
 
+Deployed on Google Cloud Kubernetes (the Todo feature not available for this version).
 Invite link: <a href="https://discord.com/api/oauth2/authorize?client_id=1082483366055653478&permissions=4398046511095&scope=bot">cac lor bot</a>
 
 Example: 
