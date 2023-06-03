@@ -1,5 +1,5 @@
 # Chat-bot
-Chat bot (discord) using Spring boot, discord4j and open AI api, build with microservices architecture.
+Chat bot (discord) using Spring boot, discord4j and open AI API, build with microservices architecture.
 To communicate between services, I use OpenFeign.
 - !todo: show your todos list.
 - !todo_add <item> add item into your todos list.
@@ -7,7 +7,6 @@ To communicate between services, I use OpenFeign.
 - ai!ask <message> ask a bot anything and it will response based on the context.
 
 Deployed on Google Cloud Kubernetes (the Todo feature not available for this version).
-Invite link: <a href="https://discord.com/api/oauth2/authorize?client_id=1082483366055653478&permissions=4398046511095&scope=bot">cac lor bot</a>
 
 Example: 
 
