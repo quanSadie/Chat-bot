@@ -1,0 +1,35 @@
+version: '2.15.1'
+
+services:
+  ai-service:
+    image: aobnao9/ai-service:0.0.1-SNAPSHOT
+    ports:
+      - "8300:8300"
+    networks:
+      - discord-network
+    depends_on:
+      - naming-server
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://naming-server:8761/eureka
+
+  command-service:
+    image: aobnao9/command-service:0.0.1-SNAPSHOT
+    ports:
+      - "8100:8100"
+    networks:
+      - discord-network
+    depends_on:
+      - naming-server
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://naming-server:8761/eureka
+
+  naming-server:
+    image: aobnao9/naming-server:0.0.1-SNAPSHOT
+    ports:
+      - "8761:8761"
+    networks:
+      - discord-network
+networks:
+  discord-network:
+
+
